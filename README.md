@@ -12,7 +12,7 @@
   <h3 align="center">Filipe Ferreira</h3>
   <p align="center">
   <a href="https://franckcolonna.com/">
-    <img src="http://prntscr.com/s1c3aq" alt="Logo" width=72 height=72>
+    <img src="https://zupimages.net/viewer.php?id=20/16/o4z2.png" alt="Logo" width=72 height=72>
   </a>
 
   <h3 align="center">Clément Caffin</h3>
