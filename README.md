@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://franckcolonna.com/">
-    <img src="https://zupimages.net/up/20/17/jt14.png" alt="Logo" width=72>
+    <img src="https://zupimages.net/up/20/17/jt14.png" alt="Logo" height=72>
   </a>
 
   <h3 align="center">Franck Colonna</h3>
