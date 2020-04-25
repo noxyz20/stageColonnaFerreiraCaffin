@@ -11,7 +11,13 @@ using UnityEngine;
 
 public class PlayerScript : MonoBehaviour
 {
-    private BoxCollider2D _boxC;
+    public int life;
+
+    public int degatDesLimites;
+
+    private SpriteRenderer mySprite;
+    private PolygonCollider2D _boxC;
+    private BoxCollider2D _foot;
 
     public float moveSpeed = 6.0f;
     public float jumpSpeed = 8.0f;
@@ -21,21 +27,39 @@ public class PlayerScript : MonoBehaviour
 
     public ContactFilter2D filter;
     public bool isGrounded;
+    private bool _canJump;
+    private int _orientation;
 
     void Start()
     {
-        _boxC = GetComponent<BoxCollider2D>();
+        _orientation = 1;
+        mySprite = GetComponent<SpriteRenderer>();
+        degatDesLimites = 1;
+        life = 10;
+        _boxC = GetComponent<PolygonCollider2D>();
+        _foot = GetComponent<BoxCollider2D>();
+        _canJump = true;
     }
 
     private void Update()
     {
-        isGrounded = _boxC.IsTouching(filter);
-
+        if (life <= 0)
+        {
+            Destroy(gameObject);
+        }
+        
+        _movement = new Vector2(Input.GetAxis("Horizontal"), 0);
+        
+        if (_movement.x/_orientation < 0)
+        {
+            mySprite.flipX = !mySprite.flipX;
+            _orientation *= -1;
+        }
+        _movement *= moveSpeed;
+        
+        isGrounded = _foot.IsTouching(filter) && _canJump;
         if (isGrounded)
         {
-            _movement = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
-            _movement *= moveSpeed;
-
             if (Input.GetButton("Jump"))
             {
                 _movement.y = jumpSpeed;
@@ -48,5 +72,24 @@ public class PlayerScript : MonoBehaviour
     private void FixedUpdate()
     {
         GetComponent<Rigidbody2D>().velocity = _movement;
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        _canJump = false;
+        if (other.CompareTag("deathLimit"))
+        {
+            Destroy(gameObject);
+        }
+
+        if (other.CompareTag("gameLimit"))
+        {
+            life -= degatDesLimites;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        _canJump = true;
     }
 }
