@@ -19,9 +19,9 @@ public class PlayerScript : MonoBehaviour
     private PolygonCollider2D _boxC;
     private BoxCollider2D _foot;
 
-    public float moveSpeed = 6.0f;
-    public float jumpSpeed = 8.0f;
-    public float gravity = 9.81f;
+    public float moveSpeed = 4.0f;
+    public float jumpSpeed = 25.0f;
+    public float gravity = 10f;
 
     private Vector2 _movement = Vector2.zero;
 
@@ -34,7 +34,6 @@ public class PlayerScript : MonoBehaviour
     {
         _orientation = 1;
         mySprite = GetComponent<SpriteRenderer>();
-        degatDesLimites = 1;
         life = 10;
         _boxC = GetComponent<PolygonCollider2D>();
         _foot = GetComponent<BoxCollider2D>();
@@ -43,6 +42,7 @@ public class PlayerScript : MonoBehaviour
 
     private void Update()
     {
+        gravity = 10;
         if (life <= 0)
         {
             Destroy(gameObject);
@@ -66,6 +66,12 @@ public class PlayerScript : MonoBehaviour
             }
         }
 
+        if (!_foot.IsTouching(filter) && _canJump)
+        {
+            gravity = 100;
+        }
+        
+
         _movement.y -= gravity * Time.deltaTime;
     }
 
@@ -76,20 +82,9 @@ public class PlayerScript : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        _canJump = false;
         if (other.CompareTag("deathLimit"))
         {
             Destroy(gameObject);
         }
-
-        if (other.CompareTag("gameLimit"))
-        {
-            life -= degatDesLimites;
-        }
-    }
-
-    private void OnTriggerExit2D(Collider2D other)
-    {
-        _canJump = true;
     }
 }
