@@ -15,7 +15,7 @@ public class PlayerScript : MonoBehaviour
 
     public int degatDesLimites;
 
-    private SpriteRenderer mySprite;
+    private SpriteRenderer _mySprite;
     private PolygonCollider2D _boxC;
     private BoxCollider2D _foot;
 
@@ -34,7 +34,7 @@ public class PlayerScript : MonoBehaviour
     void Start()
     {
         _orientation = 1;
-        mySprite = GetComponent<SpriteRenderer>();
+        _mySprite = GetComponent<SpriteRenderer>();
         life = 10;
         _boxC = GetComponent<PolygonCollider2D>();
         _foot = GetComponent<BoxCollider2D>();
@@ -54,7 +54,7 @@ public class PlayerScript : MonoBehaviour
         
         if (_movement.x/_orientation < 0)
         {
-            mySprite.flipX = !mySprite.flipX;
+            _mySprite.flipX = !_mySprite.flipX;
             _orientation *= -1;
         }
         _movement *= moveSpeed;
