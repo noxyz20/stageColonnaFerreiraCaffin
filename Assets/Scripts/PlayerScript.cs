@@ -29,6 +29,7 @@ public class PlayerScript : MonoBehaviour
     public bool isGrounded;
     private bool _canJump;
     private int _orientation;
+    private bool _isEchelle;
 
     void Start()
     {
@@ -38,6 +39,7 @@ public class PlayerScript : MonoBehaviour
         _boxC = GetComponent<PolygonCollider2D>();
         _foot = GetComponent<BoxCollider2D>();
         _canJump = true;
+        _isEchelle = false;
     }
 
     private void Update()
@@ -58,6 +60,7 @@ public class PlayerScript : MonoBehaviour
         _movement *= moveSpeed;
         
         isGrounded = _foot.IsTouching(filter) && _canJump;
+
         if (isGrounded)
         {
             if (Input.GetButton("Jump"))
@@ -71,8 +74,12 @@ public class PlayerScript : MonoBehaviour
             gravity = 100;
         }
         
-
         _movement.y -= gravity * Time.deltaTime;
+
+        if (_isEchelle)
+        {
+            _movement.y = Input.GetAxis("Vertical") * moveSpeed;
+        }
     }
 
     private void FixedUpdate()
@@ -85,6 +92,18 @@ public class PlayerScript : MonoBehaviour
         if (other.CompareTag("deathLimit"))
         {
             Destroy(gameObject);
+        }
+        if (other.CompareTag("echelle"))
+        {
+            _isEchelle = true;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.CompareTag("echelle"))
+        {
+            _isEchelle = false;
         }
     }
 }
