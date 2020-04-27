@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 709ee11994a2f44658e5fc9887c45081
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - jumpAudio: {instanceID: 0}
+  - respawnAudio: {instanceID: 0}
+  - ouchAudio: {instanceID: 0}
+  - collider2d: {instanceID: 0}
+  - audioSource: {instanceID: 0}
+  - health: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -4,8 +4,73 @@
     <e p="C:\GitLab\stageColonnaFerreiraCaffin" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="Mod Assets" t="Include">
+          <e p="Mod Resources" t="Include">
+            <e p="Scripts" t="Include">
+              <e p="Backend" t="Include">
+                <e p="TemplateEditorDetection.cs" t="Include" />
+              </e>
+              <e p="Platformer" t="Include">
+                <e p="EmitParticlesOnLand.cs" t="Include" />
+                <e p="Jiggler.cs" t="Include" />
+                <e p="PlatformerJumpPad.cs" t="Include" />
+                <e p="PlatformerSpeedPad.cs" t="Include" />
+                <e p="SimpleTrigger.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
         <e p="Scripts" t="Include">
+          <e p="Core" t="Include">
+            <e p="Fuzzy.cs" t="Include" />
+            <e p="HeapQueue.cs" t="Include" />
+            <e p="Simulation.cs" t="Include" />
+            <e p="Simulation.Event.cs" t="Include" />
+            <e p="Simulation.InstanceRegister.cs" t="Include" />
+          </e>
+          <e p="Gameplay" t="Include">
+            <e p="EnablePlayerInput.cs" t="Include" />
+            <e p="EnemyDeath.cs" t="Include" />
+            <e p="HealthIsZero.cs" t="Include" />
+            <e p="PlayerDeath.cs" t="Include" />
+            <e p="PlayerEnemyCollision.cs" t="Include" />
+            <e p="PlayerEnteredDeathZone.cs" t="Include" />
+            <e p="PlayerEnteredVictoryZone.cs" t="Include" />
+            <e p="PlayerJumped.cs" t="Include" />
+            <e p="PlayerLanded.cs" t="Include" />
+            <e p="PlayerSpawn.cs" t="Include" />
+            <e p="PlayerStopJump.cs" t="Include" />
+            <e p="PlayerTokenCollision.cs" t="Include" />
+          </e>
+          <e p="Mechanics" t="Include">
+            <e p="AnimationController.cs" t="Include" />
+            <e p="DeathZone.cs" t="Include" />
+            <e p="EnemyController.cs" t="Include" />
+            <e p="GameController.cs" t="Include" />
+            <e p="Health.cs" t="Include" />
+            <e p="KinematicObject.cs" t="Include" />
+            <e p="PatrolPath.cs" t="Include" />
+            <e p="PatrolPath.Mover.cs" t="Include" />
+            <e p="PlayAudioClip.cs" t="Include" />
+            <e p="PlayerController.cs" t="Include" />
+            <e p="SpawnPoint.cs" t="Include" />
+            <e p="TokenController.cs" t="Include" />
+            <e p="TokenInstance.cs" t="Include" />
+            <e p="VictoryZone.cs" t="Include" />
+          </e>
+          <e p="Model" t="Include">
+            <e p="PlatformerModel.cs" t="Include" />
+          </e>
+          <e p="MoveX.cs" t="Include" />
           <e p="PlayerScript.cs" t="Include" />
+          <e p="UI" t="Include">
+            <e p="MainUIController.cs" t="Include" />
+            <e p="MetaGameController.cs" t="Include" />
+          </e>
+          <e p="View" t="Include">
+            <e p="AnimatedTile.cs" t="Include" />
+            <e p="ParallaxLayer.cs" t="Include" />
+          </e>
         </e>
       </e>
       <e p="obj" t="ExcludeRecursive" />

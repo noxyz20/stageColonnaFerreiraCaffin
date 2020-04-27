@@ -8,6 +8,7 @@ TagManager:
   - gameLimit
   - echelle
   - Platform
+  - ice
   layers:
   - Default
   - TransparentFX
