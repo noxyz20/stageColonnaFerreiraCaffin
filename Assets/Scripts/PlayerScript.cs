@@ -12,16 +12,12 @@ using UnityEngine;
 public class PlayerScript : MonoBehaviour
 {
     public int life;
-
-    public int degatDesLimites;
-
+    
     private SpriteRenderer _mySprite;
     private PolygonCollider2D _boxC;
     private BoxCollider2D _foot;
 
-    public float moveSpeed = 4.0f;
-    public float jumpSpeed = 25.0f;
-    public float gravity = 10f;
+    public Vector2 speed = new Vector2(50, 50);
 
     private Vector2 _movement = Vector2.zero;
 
@@ -30,6 +26,8 @@ public class PlayerScript : MonoBehaviour
     private bool _canJump;
     private int _orientation;
     private bool _isEchelle;
+    private bool _jump;
+
 
     void Start()
     {
@@ -40,11 +38,15 @@ public class PlayerScript : MonoBehaviour
         _foot = GetComponent<BoxCollider2D>();
         _canJump = true;
         _isEchelle = false;
+        _jump = false;
     }
 
+    void Jump()
+    {
+        _jump = true;
+    }
     private void Update()
     {
-        gravity = 10;
         if (life <= 0)
         {
             Destroy(gameObject);
@@ -57,34 +59,39 @@ public class PlayerScript : MonoBehaviour
             _mySprite.flipX = !_mySprite.flipX;
             _orientation *= -1;
         }
-        _movement *= moveSpeed;
+        _movement.x *= speed.x;
         
         isGrounded = _foot.IsTouching(filter) && _canJump;
 
-        if (isGrounded)
+        
+        if (Input.GetButton("Jump") && isGrounded)
         {
-            if (Input.GetButton("Jump"))
-            {
-                _movement.y = jumpSpeed;
-            }
+            Jump();
         }
+        
 
         if (!_foot.IsTouching(filter) && _canJump)
         {
-            gravity = 100;
+            _movement.y = -2;
         }
         
-        _movement.y -= gravity * Time.deltaTime;
 
         if (_isEchelle)
         {
-            _movement.y = Input.GetAxis("Vertical") * moveSpeed;
+            _movement.y = Input.GetAxis("Vertical") * speed.y/8;
         }
+        
     }
+    
 
     private void FixedUpdate()
     {
         GetComponent<Rigidbody2D>().velocity = _movement;
+        if (_jump)
+        {
+            _jump = false;
+            GetComponent<Rigidbody2D>().AddForce(Vector2.up*speed.y, ForceMode2D.Impulse);
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
