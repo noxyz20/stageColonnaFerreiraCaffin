@@ -7,6 +7,7 @@ TagManager:
   - deathLimit
   - gameLimit
   - echelle
+  - Platform
   layers:
   - Default
   - TransparentFX
