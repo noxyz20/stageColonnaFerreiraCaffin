@@ -52,7 +52,6 @@ namespace Platformer.Mechanics
 
         protected override void Update()
         {
-            
             if (controlEnabled)
             {
                 move.x = Input.GetAxis("Horizontal");
@@ -133,6 +132,7 @@ namespace Platformer.Mechanics
             animator.SetFloat("velocityX", Mathf.Abs(velocity.x) / maxSpeed);
             
             targetVelocity = move * maxSpeed;
+            
         }
         
         private void OnTriggerEnter2D(Collider2D other)

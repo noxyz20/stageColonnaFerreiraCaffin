@@ -7,6 +7,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Platformer.Mechanics;
 using UnityEngine;
 
 public class MoveX : MonoBehaviour
@@ -16,7 +17,7 @@ public class MoveX : MonoBehaviour
     public float speed;
     public Transform startPos;
 
-    private Vector3 _nextPost;
+    public Vector3 _nextPost;
 
     void Start()
     {
@@ -36,5 +37,23 @@ public class MoveX : MonoBehaviour
     private void OnDrawGizmos()
     {
         Gizmos.DrawLine(pos1.position, pos2.position);
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            other.GetComponent<Collider2D>().transform.SetParent(transform);
+            other.GetComponent<PlayerController>().maxSpeed *= 2.5f;
+        }
+    }
+    
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            other.GetComponent<Collider2D>().transform.SetParent(null);
+            other.GetComponent<PlayerController>().maxSpeed /= 2.5f;
+        }
     }
 }

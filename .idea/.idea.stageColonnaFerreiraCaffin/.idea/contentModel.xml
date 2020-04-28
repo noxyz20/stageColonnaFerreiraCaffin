@@ -62,7 +62,6 @@
             <e p="PlatformerModel.cs" t="Include" />
           </e>
           <e p="MoveX.cs" t="Include" />
-          <e p="PlayerScript.cs" t="Include" />
           <e p="UI" t="Include">
             <e p="MainUIController.cs" t="Include" />
             <e p="MetaGameController.cs" t="Include" />
