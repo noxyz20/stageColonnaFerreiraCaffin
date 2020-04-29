@@ -19,9 +19,11 @@ public class MoveX : MonoBehaviour
 
     public Vector3 _nextPost;
 
+    public bool _playerOn;
     void Start()
     {
         _nextPost = startPos.position;
+        _playerOn = false;
     }
 
     void Update()
@@ -39,21 +41,19 @@ public class MoveX : MonoBehaviour
         Gizmos.DrawLine(pos1.position, pos2.position);
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    private void OnCollisionEnter2D(Collision2D other)
     {
-        if (other.CompareTag("Player"))
+        if (other.transform.CompareTag("Player"))
         {
-            other.GetComponent<Collider2D>().transform.SetParent(transform);
-            other.GetComponent<PlayerController>().maxSpeed *= 2.5f;
+            other.transform.GetComponent<PlayerController>().platform = transform;
         }
     }
     
-    private void OnTriggerExit2D(Collider2D other)
+    private void OnCollisionExit2D(Collision2D other)
     {
-        if (other.CompareTag("Player"))
+        if (other.transform.CompareTag("Player"))
         {
-            other.GetComponent<Collider2D>().transform.SetParent(null);
-            other.GetComponent<PlayerController>().maxSpeed /= 2.5f;
+            other.transform.GetComponent<PlayerController>().platform = null;
         }
     }
 }

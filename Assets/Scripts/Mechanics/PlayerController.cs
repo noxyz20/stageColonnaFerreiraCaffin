@@ -15,7 +15,8 @@ namespace Platformer.Mechanics
         public AudioClip jumpAudio;
         public AudioClip respawnAudio;
         public AudioClip ouchAudio;
-
+        
+        public Transform platform;
         
         public float maxSpeed = 2.5f;
         /// <summary>
@@ -48,6 +49,7 @@ namespace Platformer.Mechanics
             collider2d = GetComponent<Collider2D>();
             spriteRenderer = GetComponent<SpriteRenderer>();
             animator = GetComponent<Animator>();
+            platform = null;
         }
 
         protected override void Update()
@@ -55,6 +57,15 @@ namespace Platformer.Mechanics
             if (controlEnabled)
             {
                 move.x = Input.GetAxis("Horizontal");
+                if (move.x != 0 && platform != null)
+                {
+                    transform.SetParent(null);
+                }
+                else if (move.x == 0 && platform != null)
+                {
+                    print("!");
+                    transform.SetParent(platform);
+                }
                 if (jumpState == JumpState.Grounded && Input.GetButtonDown("Jump"))
                 {
                     jumpState = JumpState.PrepareToJump;

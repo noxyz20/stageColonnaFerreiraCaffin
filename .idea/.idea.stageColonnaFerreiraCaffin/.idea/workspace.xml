@@ -21,6 +21,9 @@
   <component name="ChangeListManager">
     <list default="true" id="3f6d2c89-47d8-407d-b8c3-288c5c79b93a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.stageColonnaFerreiraCaffin/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.stageColonnaFerreiraCaffin/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/level1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/level1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Mechanics/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Mechanics/PlayerController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MoveX.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MoveX.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +34,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Mechanics/KinematicObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Mechanics/PlayerController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scenes/level1.unity" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MoveX.cs" root0="FORCE_HIGHLIGHTING" />
@@ -94,6 +98,7 @@
       <workItem from="1588029328435" duration="186000" />
       <workItem from="1588088333674" duration="4044000" />
       <workItem from="1588092551850" duration="121000" />
+      <workItem from="1588181820874" duration="6330000" />
     </task>
     <servers />
   </component>
