@@ -21,9 +21,9 @@
   <component name="ChangeListManager">
     <list default="true" id="3f6d2c89-47d8-407d-b8c3-288c5c79b93a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.stageColonnaFerreiraCaffin/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.stageColonnaFerreiraCaffin/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/level1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/level1.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Mechanics/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Mechanics/PlayerController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MoveX.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MoveX.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,8 +46,9 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Health.cs" />
         <option value="$PROJECT_DIR$/Assets/platTest/Scripts/Model/PlatformerModel.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerScript.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Mechanics/PlayerController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MoveX.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Mechanics/KinematicObject.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Mechanics/PlayerController.cs" />
       </list>
     </option>
   </component>
@@ -98,7 +99,7 @@
       <workItem from="1588029328435" duration="186000" />
       <workItem from="1588088333674" duration="4044000" />
       <workItem from="1588092551850" duration="121000" />
-      <workItem from="1588181820874" duration="6330000" />
+      <workItem from="1588181820874" duration="12084000" />
     </task>
     <servers />
   </component>
@@ -131,6 +132,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="862" y="100" width="581" height="630" key="VCS.FileHistoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1588092386276" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1588191562592">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1588191562592" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1588020695704">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

@@ -45,6 +45,7 @@ public class MoveX : MonoBehaviour
     {
         if (other.transform.CompareTag("Player"))
         {
+            other.transform.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
             other.transform.GetComponent<PlayerController>().platform = transform;
         }
     }
@@ -53,6 +54,7 @@ public class MoveX : MonoBehaviour
     {
         if (other.transform.CompareTag("Player"))
         {
+            other.transform.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Kinematic;
             other.transform.GetComponent<PlayerController>().platform = null;
         }
     }

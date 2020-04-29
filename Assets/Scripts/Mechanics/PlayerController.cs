@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Dynamic;
 using UnityEngine;
 using Platformer.Gameplay;
 using static Platformer.Core.Simulation;
@@ -63,7 +64,6 @@ namespace Platformer.Mechanics
                 }
                 else if (move.x == 0 && platform != null)
                 {
-                    print("!");
                     transform.SetParent(platform);
                 }
                 if (jumpState == JumpState.Grounded && Input.GetButtonDown("Jump"))
@@ -106,10 +106,12 @@ namespace Platformer.Mechanics
                     {
                         Schedule<PlayerLanded>().player = this;
                         jumpState = JumpState.Landed;
+                        velocity.y = 0;
                     }
                     break;
                 case JumpState.Landed:
                     jumpState = JumpState.Grounded;
+                    velocity.y = 0;
                     break;
             }
         }
@@ -120,6 +122,8 @@ namespace Platformer.Mechanics
             {
                 velocity.y = jumpTakeOffSpeed * model.jumpModifier;
                 jump = false;
+                transform.SetParent(null);
+                platform = null;
             }
             else if (stopJump)
             {
@@ -133,12 +137,12 @@ namespace Platformer.Mechanics
             {
                 velocity.y = Input.GetAxis("Vertical")*3;
             }
-
             if (move.x > 0.01f)
                 spriteRenderer.flipX = false;
             else if (move.x < -0.01f)
                 spriteRenderer.flipX = true;
 
+            
             animator.SetBool("grounded", IsGrounded);
             animator.SetFloat("velocityX", Mathf.Abs(velocity.x) / maxSpeed);
             
