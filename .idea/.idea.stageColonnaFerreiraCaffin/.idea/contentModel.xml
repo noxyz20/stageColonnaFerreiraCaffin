@@ -20,6 +20,7 @@
             </e>
           </e>
         </e>
+        <e p="posAndSpeedEnnemy.cs" t="Include" />
         <e p="Scripts" t="Include">
           <e p="Core" t="Include">
             <e p="Fuzzy.cs" t="Include" />
@@ -58,9 +59,11 @@
             <e p="TokenInstance.cs" t="Include" />
             <e p="VictoryZone.cs" t="Include" />
           </e>
+          <e p="Menu.cs" t="Include" />
           <e p="Model" t="Include">
             <e p="PlatformerModel.cs" t="Include" />
           </e>
+          <e p="MoveEnnemy.cs" t="Include" />
           <e p="MoveX.cs" t="Include" />
           <e p="UI" t="Include">
             <e p="MainUIController.cs" t="Include" />

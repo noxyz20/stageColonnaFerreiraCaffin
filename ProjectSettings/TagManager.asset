@@ -9,6 +9,8 @@ TagManager:
   - echelle
   - Platform
   - ice
+  - limitGauche
+  - limitDroite
   layers:
   - Default
   - TransparentFX
@@ -18,7 +20,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - Ennemy
   - 
   - 
   - 
