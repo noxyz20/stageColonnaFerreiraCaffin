@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8172767379848781907}
   - component: {fileID: 3534763765778027712}
+  - component: {fileID: 60669994796397992}
   m_Layer: 0
   m_Name: 8_plat
   m_TagString: Untagged
@@ -79,3 +80,37 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &60669994796397992
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 691428586807306857}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.21, y: 0.28}
+    newSize: {x: 2.57, y: 1.26}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.545, y: 0.099999994}
+      - {x: -0.565, y: 0.08}
+      - {x: -0.545, y: 0.03}
+      - {x: -0.48499998, y: -0.099999994}
+      - {x: 0.415, y: -0.099999994}
+      - {x: 0.555, y: -0.089999996}
+      - {x: 0.565, y: 0.01}
+      - {x: 0.565, y: 0.089999996}
+      - {x: 0.545, y: 0.099999994}
