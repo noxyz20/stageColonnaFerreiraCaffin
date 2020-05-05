@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 6881103888315660996}
   m_Layer: 8
   m_Name: Ennemy
-  m_TagString: Player
+  m_TagString: ennemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -336,6 +336,10 @@ PrefabInstance:
     - target: {fileID: 1208144871472054, guid: 3030fb55de9795d48b6b51ce7b9f74f1, type: 3}
       propertyPath: m_Layer
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1208144871472054, guid: 3030fb55de9795d48b6b51ce7b9f74f1, type: 3}
+      propertyPath: m_TagString
+      value: ennemy
       objectReference: {fileID: 0}
     - target: {fileID: 4520396350849616, guid: 3030fb55de9795d48b6b51ce7b9f74f1, type: 3}
       propertyPath: m_LocalPosition.x

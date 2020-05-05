@@ -11,6 +11,7 @@ TagManager:
   - ice
   - limitGauche
   - limitDroite
+  - ennemy
   layers:
   - Default
   - TransparentFX

@@ -172,6 +172,14 @@ namespace Platformer.Mechanics
             }
         }
 
+        private void OnCollisionEnter2D(Collision2D other)
+        {
+            if (other.transform.CompareTag("ennemy"))
+            {
+                health.Decrement();
+            }
+        }
+
         public enum JumpState
         {
             Grounded,
