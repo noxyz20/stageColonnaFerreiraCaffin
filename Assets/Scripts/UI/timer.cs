@@ -20,7 +20,7 @@ public class timer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        print(ecoule);
+        //print(ecoule);
         theTimer -= Time.deltaTime;
         ecoule += Time.deltaTime;
         //print(theTimer);
