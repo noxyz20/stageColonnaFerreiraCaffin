@@ -1,6 +1,7 @@
 using System;
 using Platformer.Gameplay;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using static Platformer.Core.Simulation;
 
 namespace Platformer.Mechanics
@@ -40,6 +41,7 @@ namespace Platformer.Mechanics
             if (currentHP == 0)
             {
                 Destroy(gameObject);
+                SceneManager.LoadScene("die");
             }
         }
 
