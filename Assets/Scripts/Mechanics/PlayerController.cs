@@ -154,6 +154,8 @@ namespace Platformer.Mechanics
         {
             if (other.CompareTag("deathLimit"))
             {
+                health.Die();
+                print(health.currentHP);
                 Destroy(gameObject);
             }
             if (other.CompareTag("echelle"))
