@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class GateLevel1 : MonoBehaviour
+public class GateLevel2 : MonoBehaviour
 {
     void OnTriggerEnter2D()
     {
