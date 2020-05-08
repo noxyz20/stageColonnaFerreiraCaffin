@@ -24,22 +24,11 @@ public class timer : MonoBehaviour
         theTimer -= Time.deltaTime;
         ecoule += Time.deltaTime;
         //print(theTimer);
-        if (theTimer < 10) 
-        {
-            Debug.Log("TEN SECONDS LEFT !");
-            showRemaining = true;
-        }
         if (theTimer <= 0) 
         {
             Debug.Log("OUT OF TIME");
             theTimer = 0;
         }
-        //if ( Input.GetKeyUp(KeyCode.G) )
-        //{
-        //    Debug.Log("Resetting");
-        //    theTimer = theStartTime;
-        //    showRemaining = false;
-        //}
     }
     
     void OnGUI() 
