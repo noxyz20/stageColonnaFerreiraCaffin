@@ -13,6 +13,7 @@ namespace Platformer.Mechanics
     
     public class PlayerController : KinematicObject
     {
+        public float lastTouch;
         public AudioClip jumpAudio;
         public AudioClip respawnAudio;
         public AudioClip ouchAudio;
@@ -38,12 +39,14 @@ namespace Platformer.Mechanics
         internal Animator animator;
         readonly PlatformerModel model = Simulation.GetModel<PlatformerModel>();
         private bool _isEchelle;
+        private bool goMove;
 
         public Bounds Bounds => collider2d.bounds;
         
 
         void Awake()
         {
+            goMove = false;
             _isEchelle = false;
             health = GetComponent<Health>();
             audioSource = GetComponent<AudioSource>();
@@ -51,6 +54,22 @@ namespace Platformer.Mechanics
             spriteRenderer = GetComponent<SpriteRenderer>();
             animator = GetComponent<Animator>();
             platform = null;
+            lastTouch = Time.time;
+        }
+
+        private void OnGUI()
+        {
+            if (goMove)
+            {
+                float restant = Time.time - lastTouch;
+                string text = string.Format( "Don't Stop Running : {0}", 4-Convert.ToInt32(restant)); 
+                GUIStyle guiStyle = new GUIStyle();
+                guiStyle.fontSize = 50;
+                guiStyle.fontStyle = FontStyle.Bold;
+                guiStyle.normal.textColor = Color.red;
+                guiStyle.alignment = TextAnchor.MiddleCenter;
+                GUI.Label( new Rect(Screen.width/2f-50, Screen.height/2f-25, 100, 50), text, guiStyle); 
+            }
         }
 
         protected override void Update()
@@ -58,6 +77,27 @@ namespace Platformer.Mechanics
             if (controlEnabled)
             {
                 move.x = Input.GetAxis("Horizontal");
+                if (move.x != 0)
+                {
+                    lastTouch = Time.time;
+                    goMove = false;
+                    print((Time.time - lastTouch));
+                }
+                else
+                {
+                    float immobile = Time.time - lastTouch;
+                    if (immobile >= 1)
+                    {
+                        if (immobile >= 4)
+                        {
+                            //GameOver
+                            print("GAMEOVER");
+                        }
+                        print(("BOUGE FDP !"));
+                        goMove = true;
+                    }
+                }
+                
                 if (move.x != 0 && platform != null)
                 {
                     transform.SetParent(null);
