@@ -29,6 +29,7 @@
             <e p="Simulation.Event.cs" t="Include" />
             <e p="Simulation.InstanceRegister.cs" t="Include" />
           </e>
+          <e p="GameOver.cs" t="Include" />
           <e p="Gameplay" t="Include">
             <e p="EnablePlayerInput.cs" t="Include" />
             <e p="EnemyDeath.cs" t="Include" />
@@ -43,6 +44,8 @@
             <e p="PlayerStopJump.cs" t="Include" />
             <e p="PlayerTokenCollision.cs" t="Include" />
           </e>
+          <e p="GateLevel1.cs" t="Include" />
+          <e p="GateLevel2.cs" t="Include" />
           <e p="Mechanics" t="Include">
             <e p="AnimationController.cs" t="Include" />
             <e p="DeathZone.cs" t="Include" />
