@@ -3633,6 +3633,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1837981269}
   - component: {fileID: 1837981270}
+  - component: {fileID: 1837981271}
+  - component: {fileID: 1837981272}
   m_Layer: 0
   m_Name: gate
   m_TagString: Untagged
@@ -3702,6 +3704,44 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1837981271
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1837981268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3990499f9847d49a1cd1c2c20b3d39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!61 &1837981272
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1837981268}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.2982051, y: 2.6658049}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 11.47, y: 5.36}
+    newSize: {x: 2.57, y: 1.26}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.0778852, y: 0.028390884}
+  m_EdgeRadius: 0
 --- !u!1 &1865254994
 GameObject:
   m_ObjectHideFlags: 0
