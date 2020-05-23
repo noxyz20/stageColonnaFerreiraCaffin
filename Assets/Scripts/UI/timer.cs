@@ -21,7 +21,7 @@ public class timer : MonoBehaviour
 
     private void OnDisable()
     {
-        PlayerPrefs.SetInt("score", Convert.ToInt32(10*score));
+        PlayerPrefs.SetInt("score", lastScore+Convert.ToInt32(10*score));
         //print("SCORE Save : "+ Convert.ToInt32(10*score));
     }
 
@@ -52,14 +52,18 @@ public class timer : MonoBehaviour
         }
     }
     
-    void OnGUI() 
+    void OnGUI()
     {
+        GUIStyle guiStyle = new GUIStyle();
+        guiStyle.fontSize = 30;
+        guiStyle.normal.textColor = Color.white;
+        
         string text = string.Format( "Encore {0:00}:{1:00}", Convert.ToInt32( theTimer / 60.0 ), Convert.ToInt32( theTimer % 60.0 ) );
         string score = string.Format("Score : {0}", lastScore + Convert.ToInt32(10*this.score));
         if (showRemaining)
         {
-            GUI.Label( new Rect(0, 30, Screen.width - 20, 30), text );
-            GUI.Label( new Rect(0, 40, Screen.width - 20, 30), score );
+            GUI.Label( new Rect(0, 70, Screen.width - 20, 30), text , guiStyle);
+            GUI.Label( new Rect(0, 100, Screen.width - 20, 30), score , guiStyle);
         }
     }
 }
