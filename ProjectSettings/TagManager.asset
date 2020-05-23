@@ -12,6 +12,7 @@ TagManager:
   - limitGauche
   - limitDroite
   - ennemy
+  - barriere
   layers:
   - Default
   - TransparentFX
