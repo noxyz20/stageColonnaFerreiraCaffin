@@ -1227,7 +1227,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 4.2025056
+  orthographic size: 4.378756
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1251,7 +1251,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.01, y: -0.53, z: -10}
+  m_LocalPosition: {x: 0.01, y: -0.72, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -4729,22 +4729,47 @@ PrefabInstance:
     - target: {fileID: 8684321637354530736, guid: ad021fea482ab974db91ebe1f4dc2b9e,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -351.9
+      value: -960.93
       objectReference: {fileID: 0}
     - target: {fileID: 8684321637354530736, guid: ad021fea482ab974db91ebe1f4dc2b9e,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -193.92
+      value: -536.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 8684321637354530736, guid: ad021fea482ab974db91ebe1f4dc2b9e,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 8797485674601432195, guid: ad021fea482ab974db91ebe1f4dc2b9e,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 178.45001
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 8797485674601432195, guid: ad021fea482ab974db91ebe1f4dc2b9e,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -293.95
+      value: -850
+      objectReference: {fileID: 0}
+    - target: {fileID: 8797485674601432195, guid: ad021fea482ab974db91ebe1f4dc2b9e,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8797485674601432195, guid: ad021fea482ab974db91ebe1f4dc2b9e,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8797485674601432195, guid: ad021fea482ab974db91ebe1f4dc2b9e,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 80.381744
+      objectReference: {fileID: 0}
+    - target: {fileID: 8797485674601432195, guid: ad021fea482ab974db91ebe1f4dc2b9e,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 226.81937
       objectReference: {fileID: 0}
     - target: {fileID: 8797485675165475160, guid: ad021fea482ab974db91ebe1f4dc2b9e,
         type: 3}
