@@ -1,8 +1,5 @@
-using System;
-using Platformer.Gameplay;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using static Platformer.Core.Simulation;
 
 namespace Platformer.Mechanics
 {

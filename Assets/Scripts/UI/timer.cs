@@ -1,18 +1,16 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
-using UnityEngine.UI;
+
 
 public class timer : MonoBehaviour
 {
-    private float ecoule = 0f;
     float theTimer = 0.0f;
     public float theStartTime = 120.0f;
     public bool showRemaining;
 
     private int lastScore;
+
+    private float score = 0f;
     // Start is called before the first frame update
 
     private void OnEnable()
@@ -23,8 +21,8 @@ public class timer : MonoBehaviour
 
     private void OnDisable()
     {
-        PlayerPrefs.SetInt("score", Convert.ToInt32(10*ecoule));
-        print("SCORE Save : "+ Convert.ToInt32(10*ecoule));
+        PlayerPrefs.SetInt("score", Convert.ToInt32(10*score));
+        print("SCORE Save : "+ Convert.ToInt32(10*score));
     }
 
     void Start()
@@ -39,7 +37,11 @@ public class timer : MonoBehaviour
     {
         //print(ecoule);
         theTimer -= Time.deltaTime;
-        ecoule += Time.deltaTime;
+
+        if (theTimer>0)
+        {
+            score += Time.deltaTime;
+        }
         //print(theTimer);
         if (theTimer <= 0)
         {
@@ -53,7 +55,7 @@ public class timer : MonoBehaviour
     void OnGUI() 
     {
         string text = string.Format( "Encore {0:00}:{1:00}", Convert.ToInt32( theTimer / 60.0 ), Convert.ToInt32( theTimer % 60.0 ) );
-        string score = string.Format("Score : {0}", lastScore + Convert.ToInt32(10*ecoule));
+        string score = string.Format("Score : {0}", lastScore + Convert.ToInt32(10*this.score));
         if (showRemaining)
         {
             GUI.Label( new Rect(0, 30, Screen.width - 20, 30), text );

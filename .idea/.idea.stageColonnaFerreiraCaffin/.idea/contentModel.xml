@@ -19,7 +19,6 @@
             <e p="PlayerJumped.cs" t="Include" />
             <e p="PlayerLanded.cs" t="Include" />
             <e p="PlayerStopJump.cs" t="Include" />
-            <e p="PlayerTokenCollision.cs" t="Include" />
           </e>
           <e p="GateLevel1.cs" t="Include" />
           <e p="GateLevel2.cs" t="Include" />
@@ -28,12 +27,7 @@
             <e p="GameController.cs" t="Include" />
             <e p="Health.cs" t="Include" />
             <e p="KinematicObject.cs" t="Include" />
-            <e p="PatrolPath.cs" t="Include" />
-            <e p="PatrolPath.Mover.cs" t="Include" />
-            <e p="PlayAudioClip.cs" t="Include" />
             <e p="PlayerController.cs" t="Include" />
-            <e p="TokenController.cs" t="Include" />
-            <e p="TokenInstance.cs" t="Include" />
           </e>
           <e p="Menu.cs" t="Include" />
           <e p="Model" t="Include">
@@ -41,6 +35,7 @@
           </e>
           <e p="MoveEnnemy.cs" t="Include" />
           <e p="MoveX.cs" t="Include" />
+          <e p="SingletonAudio.cs" t="Include" />
           <e p="UI" t="Include">
             <e p="lifeUI.cs" t="Include" />
             <e p="MainUIController.cs" t="Include" />

@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using Platformer.Mechanics;
+﻿using Platformer.Mechanics;
 using UnityEngine;
 using UnityEngine.UI;
 
