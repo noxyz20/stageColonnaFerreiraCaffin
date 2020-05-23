@@ -28,6 +28,8 @@ public class timer : MonoBehaviour
         {
             Debug.Log("OUT OF TIME");
             theTimer = 0;
+            Destroy(GetComponentInChildren<SpriteRenderer>());
+            Destroy(GetComponentInChildren<BoxCollider2D>());
         }
     }
     
