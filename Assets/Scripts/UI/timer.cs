@@ -16,13 +16,13 @@ public class timer : MonoBehaviour
     private void OnEnable()
     {
         lastScore  =  PlayerPrefs.GetInt("score");
-        print("SCORE : "+ lastScore);
+        //print("SCORE : "+ lastScore);
     }
 
     private void OnDisable()
     {
         PlayerPrefs.SetInt("score", Convert.ToInt32(10*score));
-        print("SCORE Save : "+ Convert.ToInt32(10*score));
+        //print("SCORE Save : "+ Convert.ToInt32(10*score));
     }
 
     void Start()

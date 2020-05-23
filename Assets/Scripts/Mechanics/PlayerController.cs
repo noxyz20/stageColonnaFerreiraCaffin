@@ -73,7 +73,7 @@ namespace Platformer.Mechanics
                 {
                     lastTouch = Time.time;
                     goMove = false;
-                    print((Time.time - lastTouch));
+                    //print((Time.time - lastTouch));
                 }
                 else
                 {
@@ -83,9 +83,9 @@ namespace Platformer.Mechanics
                         if (immobile >= 4)
                         {
                             health.Die();
-                            print("GAMEOVER");
+                            //print("GAMEOVER");
                         }
-                        print(("BOUGE FDP !"));
+                        //print(("BOUGE FDP !"));
                         goMove = true;
                     }
                 }
