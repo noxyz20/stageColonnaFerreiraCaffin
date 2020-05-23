@@ -20,89 +20,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3f6d2c89-47d8-407d-b8c3-288c5c79b93a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.stageColonnaFerreiraCaffin/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.stageColonnaFerreiraCaffin/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.stageColonnaFerreiraCaffin/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.stageColonnaFerreiraCaffin/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/Collectable.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/Collectable.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/Death.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/Death.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/Hurt.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/Hurt.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/LandOnEnemy.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/LandOnEnemy.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/LandOnGround.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/LandOnGround.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/Walk01.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/Walk01.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/Walk02.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/Walk02.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/jump.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/jump.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Character/Animations/EnemyDeath.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Character/Animations/EnemyDeath.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Character/Animations/PlayerDeath.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Character/Animations/PlayerDeath.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Character/Animations/PlayerSpawn.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Character/Animations/PlayerSpawn.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Character/Animations/PlayerVictory.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Character/Animations/PlayerVictory.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Character/Sprites/PlayerDeath.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Character/Sprites/PlayerDeath.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Character/Sprites/PlayerHurt.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Character/Sprites/PlayerHurt.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Character/Sprites/PlayerSpawn.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Character/Sprites/PlayerSpawn.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Character/Sprites/PlayerVictory.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Character/Sprites/PlayerVictory.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Mod Assets.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Mod Assets/Mod Resources.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Mod Assets/Mod Resources/Scripts.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Mod Assets/Mod Resources/Scripts/Backend.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Mod Assets/Mod Resources/Scripts/Backend/TemplateEditorDetection.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Mod Assets/Mod Resources/Scripts/Backend/TemplateEditorDetection.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Mod Assets/Mod Resources/Scripts/Platformer.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Mod Assets/Mod Resources/Scripts/Platformer/EmitParticlesOnLand.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Mod Assets/Mod Resources/Scripts/Platformer/EmitParticlesOnLand.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Mod Assets/Mod Resources/Scripts/Platformer/Jiggler.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Mod Assets/Mod Resources/Scripts/Platformer/Jiggler.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Mod Assets/Mod Resources/Scripts/Platformer/PlatformerJumpPad.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Mod Assets/Mod Resources/Scripts/Platformer/PlatformerJumpPad.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Mod Assets/Mod Resources/Scripts/Platformer/PlatformerSpeedPad.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Mod Assets/Mod Resources/Scripts/Platformer/PlatformerSpeedPad.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Mod Assets/Mod Resources/Scripts/Platformer/SimpleTrigger.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Mod Assets/Mod Resources/Scripts/Platformer/SimpleTrigger.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Mod Assets/Particle Prefabs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Mod Assets/Particle Prefabs/ConfettiCelebration.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Mod Assets/Particle Prefabs/ConfettiCelebration.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Canvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Canvas.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main Menu.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/level1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/level1.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/level2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/level2.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameOver.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameOver.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/EnemyDeath.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/EnemyDeath.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/HealthIsZero.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/HealthIsZero.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/PlayerDeath.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/PlayerDeath.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/PlayerEnemyCollision.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/PlayerEnemyCollision.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/PlayerEnteredDeathZone.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/PlayerEnteredDeathZone.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/PlayerEnteredVictoryZone.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/PlayerEnteredVictoryZone.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/PlayerSpawn.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/PlayerSpawn.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Mechanics/DeathZone.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Mechanics/DeathZone.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Mechanics/EnemyController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Mechanics/EnemyController.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Mechanics/SpawnPoint.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Mechanics/SpawnPoint.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Mechanics/VictoryZone.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Mechanics/VictoryZone.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/PlayerJumped.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/PlayerJumped.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/PlayerTokenCollision.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/PlayerTokenCollision.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Mechanics/Health.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Mechanics/Health.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Mechanics/PatrolPath.Mover.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Mechanics/PatrolPath.Mover.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Mechanics/PatrolPath.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Mechanics/PatrolPath.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Mechanics/PlayAudioClip.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Mechanics/PlayAudioClip.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Mechanics/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Mechanics/PlayerController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Mechanics/TokenController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Mechanics/TokenController.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Mechanics/TokenInstance.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Mechanics/TokenInstance.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Menu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Menu.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/lifeUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/lifeUI.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/timer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/timer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/score.scoreFile" beforeDir="false" afterPath="$PROJECT_DIR$/score.scoreFile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,13 +55,17 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Gameplay/PlayerJumped.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/timer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Gameplay/PlayerLanded.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Gameplay/PlayerStopJump.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Mechanics/PlayerController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scenes/level1.unity" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MoveEnnemy.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Mechanics/PlayAudioClip.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Mechanics/Health.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Mechanics/KinematicObject.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Gameplay/EnablePlayerInput.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SingletonAudio.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GateLevel2.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameOver.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MoveX.cs" root0="FORCE_HIGHLIGHTING" />
@@ -136,11 +82,14 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MoveX.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Mechanics/KinematicObject.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Mechanics/Health.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MoveEnnemy.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/lifeUI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Mechanics/Health.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Mechanics/PlayerController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameOver.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Gameplay/PlayerJumped.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Menu.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameOver.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SingletonAudio.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/timer.cs" />
       </list>
     </option>
@@ -157,6 +106,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.uml" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
@@ -198,6 +148,7 @@
       <workItem from="1588952093241" duration="3329000" />
       <workItem from="1589043303133" duration="329000" />
       <workItem from="1590244187685" duration="965000" />
+      <workItem from="1590259982727" duration="4312000" />
     </task>
     <servers />
   </component>
@@ -226,6 +177,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="557" y="123" key="RollbackChangesDialog/0.0.1536.824@0.0.1536.824" timestamp="1588029439235" />
+    <state x="277" y="57" key="SettingsEditor" timestamp="1590253335829">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1590253335829" />
     <state x="862" y="100" width="581" height="630" key="VCS.FileHistoryDialog" timestamp="1588092386276">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

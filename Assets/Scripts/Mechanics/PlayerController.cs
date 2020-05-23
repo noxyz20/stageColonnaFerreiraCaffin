@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Dynamic;
 using UnityEngine;
 using Platformer.Gameplay;
 using static Platformer.Core.Simulation;
@@ -14,10 +11,7 @@ namespace Platformer.Mechanics
     public class PlayerController : KinematicObject
     {
         public float lastTouch;
-        public AudioClip jumpAudio;
-        public AudioClip respawnAudio;
-        public AudioClip ouchAudio;
-        
+
         public Transform platform;
         
         public float maxSpeed = 2.5f;
@@ -29,7 +23,6 @@ namespace Platformer.Mechanics
         public JumpState jumpState = JumpState.Grounded;
         private bool stopJump;
         /*internal new*/ public Collider2D collider2d;
-        /*internal new*/ public AudioSource audioSource;
         public Health health;
         public bool controlEnabled = true;
 
@@ -49,7 +42,6 @@ namespace Platformer.Mechanics
             goMove = false;
             _isEchelle = false;
             health = GetComponent<Health>();
-            audioSource = GetComponent<AudioSource>();
             collider2d = GetComponent<Collider2D>();
             spriteRenderer = GetComponent<SpriteRenderer>();
             animator = GetComponent<Animator>();
