@@ -85,11 +85,9 @@ namespace Platformer.Mechanics
                             health.Die();
                             //print("GAMEOVER");
                         }
-                        //print(("BOUGE FDP !"));
                         goMove = true;
                     }
                 }
-                
                 if (move.x != 0 && platform != null)
                 {
                     transform.SetParent(null);
@@ -179,7 +177,6 @@ namespace Platformer.Mechanics
             animator.SetFloat("velocityX", Mathf.Abs(velocity.x) / maxSpeed);
             
             targetVelocity = move * maxSpeed;
-            
         }
         
         private void OnTriggerEnter2D(Collider2D other)

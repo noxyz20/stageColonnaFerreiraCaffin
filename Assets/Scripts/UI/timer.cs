@@ -1,7 +1,6 @@
 ﻿using System;
 using UnityEngine;
 
-
 public class timer : MonoBehaviour
 {
     float theTimer = 0.0f;

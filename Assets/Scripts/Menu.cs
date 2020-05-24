@@ -1,13 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
+﻿using System.IO;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class Menu : MonoBehaviour
 {
-    
- 
     private void OnGUI ()
     {
         if (File.Exists("score.scoreFile"))

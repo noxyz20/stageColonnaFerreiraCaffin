@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class SingletonAudio : MonoBehaviour
@@ -33,7 +30,7 @@ public class SingletonAudio : MonoBehaviour
     {
         if (SceneManager.GetSceneAt(0).name=="die")
         {
-            print("!!!!!");
+            //print("!!!!!");
             Destroy(this.gameObject);
         }
     }
